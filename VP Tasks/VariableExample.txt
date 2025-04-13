@@ -1,0 +1,32 @@
+using System;
+namespace VariableExample
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            // 1. Declare variables first, then initialize on the next line
+            string StudentName;
+            StudentName = "Shoaib"; // Name of the student
+
+            bool isEnrolled;
+            isEnrolled = true; // Enrollment status
+
+            int StudentAge;
+            StudentAge = 20; // Age of the student
+
+            // 2. Declare and initialize variables on the same line
+            string Department = "Computer Science"; // Department of the student
+            char Grade = 'A'; // Grade achieved
+            double FeeBalance = 46000.00; // Fee balance of the student
+
+            // Output the values
+            Console.WriteLine("Student Name: " + StudentName);
+            Console.WriteLine("Student Age: " + StudentAge);
+            Console.WriteLine("Is Enrolled: " + isEnrolled);
+            Console.WriteLine("Department: " + Department);
+            Console.WriteLine("Grade: " + Grade);
+            Console.WriteLine("Fee Balance: $" + FeeBalance);          
+        }
+    }
+}
