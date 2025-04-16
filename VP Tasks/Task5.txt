@@ -1,0 +1,21 @@
+using System;
+namespace ConsoleApp5
+{
+    class Program
+    { 
+        // Private static field with underscore prefix
+        private static int _globalVariable = 10;
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Global Variable (Before): " + _globalVariable);
+            int localVariable = 20; 
+
+            Console.WriteLine("Local Vriable: " + localVariable);
+            _globalVariable += localVariable;
+
+            Console.WriteLine("Global Variable (After): " + _globalVariable);
+            Console.ReadLine();
+        }
+    }
+}
